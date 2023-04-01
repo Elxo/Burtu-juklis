@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script>
+            function fn1() {str = document.getElementById("text1").value;
+            console.log(str)
+            fn2();
+        }
+            function fn2(){
+                var shuffled = str.split('').sort(function(){return 0.5-Math.random()}).join('')
+                document.getElementById("main").innerHTML = shuffled;
+            }
+            
+          </script>
+    </head>
+    <body>
+        <h1>Burtu jaucējs</h1>
+        <label for="vards">Vārds:</label>
+<input  id="text1" placholder="Ievadiet vārdu"></input> 
+<br>
+
+<div>
+    
+
+
+    
+  
+    <button class ="poga1" onclick="fn1()" >Jaukt Burtus</button>
+    <script>
+        
+    </script>
+<br>    
+
+    
+<p id = "main" ></p>
+
+    </body>
+</html>
